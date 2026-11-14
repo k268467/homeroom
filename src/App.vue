@@ -1,11 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import AppSidebar from './components/AppSidebar.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="flex min-h-screen">
+    <AppSidebar
+ />
+
+    <div class="flex min-w-0 flex-1 flex-col">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <style scoped></style>
